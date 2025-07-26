@@ -44,7 +44,6 @@ export default function CharacterList({
             <p>
               <strong>{c.name}</strong> - ❤️ {c.hp} | 💧 {c.mana}
             </p>
-
             <p>Itens: {c.items.join(", ")}</p>
 
             <div className="buttons">

@@ -12,6 +12,10 @@ export default function App() {
     return saved ? JSON.parse(saved) : [];
   });
 
+  useEffect(() => {
+    localStorage.setItem("characters", JSON.stringify(characters));
+  }, [characters]);
+
   const [history, setHistory] = useState(() => {
     const saved = localStorage.getItem("history");
     return saved ? JSON.parse(saved) : [];
